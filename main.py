@@ -2,7 +2,7 @@ import discord
 from discord import Intents, app_commands
 import asyncio
 from discord.audit_logs import _transform_default_reaction
-from discord.ext.commands import BucketType, Cog, BadArgument, NSFWChannelRequired, command, cooldown
+from discord.ext.commands import BucketType, Cog, BadArgument, command, cooldown
 from discord.ext import commands
 import os
 import random
