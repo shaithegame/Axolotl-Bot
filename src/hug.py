@@ -5,7 +5,7 @@ def map_to_ping(user: discord.User):
   return user.mention
   
 
-@client.hybrid_command(description='MULTI-PERSON HUG TEST')
+@client.hybrid_command(description='Give selected user(s) hugs')
 async def hug(
   ctx,
   user_1: discord.User,
