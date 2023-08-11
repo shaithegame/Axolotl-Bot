@@ -7,6 +7,7 @@ import src.fact
 import src.hug
 import src.image
 import src.info
+import src.kiss
 import src.speak
 import src.suggest
 import src.welcome
