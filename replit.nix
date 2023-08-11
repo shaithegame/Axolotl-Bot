@@ -1,6 +1,5 @@
 { pkgs }: {
   deps = [
-    pkgs.python39Packages.pip
     pkgs.python310Full
     pkgs.replitPackages.prybar-python310
     pkgs.replitPackages.stderred
