@@ -15,11 +15,14 @@ async def hug(
   user_5: discord.User = None
 ):
   users = [user_1]
-  if user_2 or user_3 or user_4 or user_5 != None:
+  if user_2 != None:
     users.append(user_2)
-    users.append(user_3)
-    users.append(user_4)
-    users.append(user_5)
+  if user_3 != None:
+        users.append(user_3)
+  if user_4 != None:
+        users.append(user_4)
+  if user_5 != None:
+        users.append(user_5)
 
   user_mentions = map(map_to_ping, users)
   mention_list = ', '.join(user_mentions)
