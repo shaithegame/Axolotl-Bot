@@ -5,8 +5,8 @@ def map_to_ping(user: discord.User):
   return user.mention
   
 
-@client.hybrid_command(description='Give selected user(s) hugs')
-async def hug(
+@client.hybrid_command(description='Give selected user(s) kisses')
+async def kiss(
   ctx,
   user_1: discord.User,
   user_2: discord.User = None,
@@ -28,4 +28,4 @@ async def hug(
   user_mentions = map(map_to_ping, users)
   mention_list = ', '.join(user_mentions)
   
-  await ctx.send(f'Hugs for {mention_list} from {ctx.author.mention}! /=^v^=/')
+  await ctx.send(f'Kisses for {mention_list} from {ctx.author.mention}! =^3^=')
