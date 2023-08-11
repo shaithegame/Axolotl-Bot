@@ -5,6 +5,7 @@ from src.client import client
 import src.cmds
 import src.fact
 import src.hug
+import src.test_hug
 import src.image
 import src.info
 import src.speak
