@@ -1,14 +1,10 @@
 import discord
 from src.client import client
 
+@client.hybrid_command
+async def hug(ctx):
+  await ctx.send('Question time initiated, ask away!')
+  message=await client.wait_for('message')
 
-@client.hybrid_command(description='Ask axolotl bot questions')
-async def ask(ctx, *, msg):
-  embed=discord.Embed(
-    title=msg,
-    description=answer
-  )
   if 'pronoun' or 'pronounce' in msg.content_lower():
-    answer='My pronouns are he/they! =*w*='
-
-  await ctx.send((f'{ctx.author.mention}'), embed=embed)
+    await ctx.send('test')
