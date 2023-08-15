@@ -10,7 +10,7 @@ async def ask(ctx, *, msg):
     title=msg,
     description=answer
   )
-  if 'pronouns' or 'pronounce' in msg.content_lower():
+  if 'pronoun' or 'pronounce' in msg.content_lower():
     answer='My pronouns are he/they! =*w*='
 
   await ctx.send((f'{ctx.author.mention}'), embed=embed)
