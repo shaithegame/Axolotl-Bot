@@ -2,7 +2,7 @@ import os
 from keep_alive import keep_alive
 
 from src.client import client
-import sec.ask
+import src.ask
 import src.cmds
 import src.fact
 import src.hug
