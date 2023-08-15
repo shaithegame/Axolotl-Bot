@@ -1,7 +1,7 @@
 import discord
 from src.client import client
 
-@client.hybrid_command
+@client.hybrid_command(description='TEST')
 async def ask(ctx, *, message: str):
   await ctx.send('Question time ready!')
   
