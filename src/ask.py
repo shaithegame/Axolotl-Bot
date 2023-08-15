@@ -4,8 +4,6 @@ from src.client import client
 
 @client.hybrid_command(description='Ask axolotl bot questions')
 async def ask(ctx, *, msg):
-  answer=''
-  msg=''
   embed=discord.Embed(
     title=msg,
     description=answer
